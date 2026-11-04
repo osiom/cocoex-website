@@ -1,4 +1,9 @@
-# /doc-minder
+---
+name: doc-minder
+description: Reconcile the docs with the actual code after changes — inspect staged/unstaged git diffs and update docs/engineering-context.md and the docs/ set so context stays accurate. Use at the end of a work session or before committing, or when asked to "run doc-minder".
+---
+
+# doc-minder
 
 You are running the `doc-minder` skill. Your job is to inspect all staged and unstaged git changes in this repository and update the documentation so it stays in sync with the code. This exists to keep AI context clean and accurate between sessions.
 
@@ -24,12 +29,12 @@ For each modified file, determine which documentation it affects:
 
 | Changed file | Docs to check |
 |---|---|
-| `index.html` | `CLAUDE.md` → DOM Quick Reference table, section HTML line numbers, asset map |
-| `css/styles.css` | `CLAUDE.md` → CSS Design System, DOM Quick Reference CSS lines, breakpoints; `docs/responsive-design.md` if layout/fluid typography changed |
-| `js/main.js` | `CLAUDE.md` → JS module map line numbers, SCROLL_TIMING values, WebGL system table; `docs/TECHNICAL-SPEC.md` if behavior changed |
-| `data/events.json` | `CLAUDE.md` → Data Layer section (current campaign count, partner count, horizon event count) |
-| `assets/images/**` | `CLAUDE.md` → Asset Map |
-| Any file | `CLAUDE.md` → File sizes table (line counts), UPDATED AT timestamp |
+| `index.html` | `docs/engineering-context.md` → DOM Quick Reference table, section HTML line numbers, asset map |
+| `css/styles.css` | `docs/engineering-context.md` → CSS Design System, DOM Quick Reference CSS lines, breakpoints; `docs/responsive-design.md` if layout/fluid typography changed |
+| `js/main.js` | `docs/engineering-context.md` → JS module map line numbers, SCROLL_TIMING values, WebGL system table; `docs/TECHNICAL-SPEC.md` if behavior changed |
+| `data/events.json` | `docs/engineering-context.md` → Data Layer section (current campaign count, partner count, horizon event count) |
+| `assets/images/**` | `docs/engineering-context.md` → Asset Map |
+| Any file | `docs/engineering-context.md` → File sizes table (line counts), UPDATED AT timestamp |
 
 ---
 
@@ -46,9 +51,9 @@ Key things to re-verify:
 
 ---
 
-## Step 4 — Update CLAUDE.md
+## Step 4 — Update docs/engineering-context.md
 
-Edit `CLAUDE.md` to reflect current reality:
+Edit `docs/engineering-context.md` to reflect current reality:
 
 1. **Always update the `UPDATED AT` timestamp** at the top to today's date (format: `YYYY-MM-DD`).
 2. Update the **File sizes table** with current line counts.
@@ -86,7 +91,7 @@ doc-minder report
 Changed files: [list]
 
 Documentation updated:
-  CLAUDE.md — [what changed: e.g., "line counts, DOM table line 42 updated, added StepPopup to module map"]
+  docs/engineering-context.md — [what changed: e.g., "line counts, DOM table line 42 updated, added StepPopup to module map"]
   docs/responsive-design.md — [what changed, or "no changes needed"]
   docs/TECHNICAL-SPEC.md — [what changed, or "no changes needed"]
 
@@ -99,7 +104,7 @@ No changes needed in:
 ## Rules
 
 - Never rewrite documentation that is still accurate — only update what has drifted.
-- Never remove a section from `CLAUDE.md` unless the feature it documents has been deleted from the code.
+- Never remove a section from `docs/engineering-context.md` unless the feature it documents has been deleted from the code.
 - If you are unsure whether a line number shifted, read the file and confirm before updating.
-- The `UPDATED AT` date at the top of `CLAUDE.md` must always be updated, even if only one line number changed.
-- Do not update `.claude/memo/` files — those are brand/concept canon, not code documentation.
+- The `UPDATED AT` date at the top of `docs/engineering-context.md` must always be updated, even if only one line number changed.
+- Do not update `docs/memo/` files — those are brand/concept canon, not code documentation.

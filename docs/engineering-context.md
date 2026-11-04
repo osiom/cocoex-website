@@ -467,14 +467,14 @@ Pre-push checklist:
 
 For *what* the code does, read `index.html`, the ES modules under `src/`, and the stylesheets under `src/styles/*.css` directly. Those files are the reference.
 
-### Brand & Concept (`.claude/memo/`)
+### Brand & Concept (`docs/memo/`)
 
 | File | Purpose |
 |------|---------|
-| `.claude/memo/The Seven Muses.md` | Muse canon (planet, day, cause, color) |
-| `.claude/memo/Stardust.md` | Stardust programme concept |
-| `.claude/memo/Horizon.md` | Horizon + Future Lab methodology |
-| `.claude/memo/cocoex Brand Rules.md` | Tone, typography, visual identity |
+| `docs/memo/The Seven Muses.md` | Muse canon (planet, day, cause, color) |
+| `docs/memo/Stardust.md` | Stardust programme concept |
+| `docs/memo/Horizon.md` | Horizon + Future Lab methodology |
+| `docs/memo/cocoex Brand Rules.md` | Tone, typography, visual identity |
 
 ### Dev Tools
 

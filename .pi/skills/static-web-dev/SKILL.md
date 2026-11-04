@@ -925,4 +925,4 @@ This skill is tailored for the cocoex.xyz project:
 - Shared GLSL utilities reduce duplication
 - 60fps desktop, 30fps mobile target
 
-See `CLAUDE.md` for complete project architecture.
+See `docs/engineering-context.md` for complete project architecture.
