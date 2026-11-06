@@ -1,9 +1,11 @@
 # cocoex-website — agent context
 
+_Shared rules (Pi + Hermes): `../AGENTS.md` (gh/). Read it if it isn't in your context._
+
 cocoex.xyz — scroll-driven WebGL site for **cocoex**, a transdisciplinary social-impact
 lab (art, community, social impact). Vanilla JS (no frameworks), GSAP ScrollTrigger +
 Lenis smooth scroll, custom WebGL shaders, built with Vite. The full engineering
-reference lives in `docs/engineering-context.md` (moved out of `CLAUDE.md`).
+reference lives in `docs/engineering-context.md`.
 
 ## Always-on constraints (do not break)
 - **Vanilla JS only** — no frameworks. Deps stay `gsap@3.12.5` + `lenis@1.3.4` + Vite.
@@ -40,9 +42,9 @@ reference lives in `docs/engineering-context.md` (moved out of `CLAUDE.md`).
 - `index.html`, `src/**`, `src/styles/*.css` — the code is the reference for *what* it does.
 
 ## Workflows
-- Animation/WebGL/CSS work → `static-web-dev` skill.
-- End of a work session / before commit → `doc-minder` skill (keeps docs honest).
-- Pre-push checklist → `/pre-push`.
+- Animation/WebGL/CSS work → `static-web-dev` skill (`.pi/skills/static-web-dev/SKILL.md`).
+- End of a work session / before commit → `doc-minder` skill (`.pi/skills/doc-minder/SKILL.md`) (keeps docs honest).
+- Pre-push checklist → `/pre-push` (`.pi/prompts/pre-push.md`).
 
 ## Conventions
 ```bash
