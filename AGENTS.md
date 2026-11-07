@@ -32,13 +32,7 @@ reference lives in `docs/engineering-context.md`.
   exception), `prefers-reduced-motion`, visible focus outlines, keyboard nav.
 
 ## Where to look (read on demand)
-- `docs/engineering-context.md` — **full reference**: timeline, WebGL system, DOM→module
-  map, data layer, asset map, bugs & rules. Read before non-trivial code changes.
-- `docs/technical-spec.md` — scroll budget, single-RAF loop, factory shader, Lenis, DPR.
-- `docs/responsive-design.md` — clamp-first strategy, orbit ellipse, mobile touch/scroll.
-- `docs/libraries.md` — GSAP + Lenis, Typekit, WebGL patterns.
-- `docs/memo/` — brand & concept canon (Seven Muses, Stardust, Horizon, Brand Rules).
-- `docs/website-rewrite-plan.md`, `docs/notes/` — plan + ad-hoc notes.
+- `docs/README.md` — docs index.
 - `index.html`, `src/**`, `src/styles/*.css` — the code is the reference for *what* it does.
 
 ## Workflows
